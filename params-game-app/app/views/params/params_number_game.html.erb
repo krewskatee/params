@@ -1,0 +1,11 @@
+<% actual_number = 36 %>
+<h1>Welcome! Please enter the number to guess between 1-100 in the params!</h1>
+<% if @number == nil %>
+  <h3>Please enter number</h3>
+<% else %>
+  <% if @number.to_i == actual_number %>
+    <h3>Nice job! You are correct, the number was <%= actual_number %>.</h3>
+  <% else %>
+    <h3>Wrong! Please guess again!</h3>
+  <% end %>
+<% end %>

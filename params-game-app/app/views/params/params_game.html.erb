@@ -1,0 +1,9 @@
+<h1>Please enter your name in the query</h1>
+<% if @name == nil %>
+  <h3>Please enter name in params</h3>
+<% else %>
+  <%= @name.upcase %>
+  <% if @name[0].downcase == 'a' %>
+    <h3>“Hey, your name starts with the first letter of the alphabet!”</h3>
+  <% end %>
+<% end %>
