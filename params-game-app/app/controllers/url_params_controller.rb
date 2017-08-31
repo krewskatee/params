@@ -1,11 +1,7 @@
-class ParamsController < ApplicationController
-  def params_game
-    @name = params[:my_name]
-  end
-  def params_number_game
+class UrlParamsController < ApplicationController
+  def params_number_url
     actual_number = 36
     @number = params[:my_guess].to_i
-
     if @number == 0
       @message = "Please enter a number!"
     else
